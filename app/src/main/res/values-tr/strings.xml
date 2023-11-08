@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginViewAndroidApp</string>
+    <string name="username">Kullanıcı adı</string>
+    <string name="password">Şifre</string>
+    <string name="loginBtnText">Giriş</string>
+    <string name="help">Yardım?</string>
+</resources>

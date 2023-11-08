@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginViewAndroidApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginBtnText">Log in</string>
+    <string name="help">Help?</string>
+</resources>
