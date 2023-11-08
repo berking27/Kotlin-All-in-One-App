@@ -1,9 +1,11 @@
 package com.example.loginviewandroidapp
 
 import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.loginviewandroidapp.databinding.ActivityHomePageBinding
 import com.example.loginviewandroidapp.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
@@ -17,7 +19,18 @@ class MainActivity : AppCompatActivity() {
         Log.e("onCreate", "worked")
 
         binding.loginBtn.setOnClickListener {
-            Snackbar.make(it,"Merhaba", Snackbar.LENGTH_SHORT).show()
+            val user = Users("1234", 23, "Berkin Koca")
+
+            val newIntent = Intent(this@MainActivity, HomePageActivity::class.java)
+
+            newIntent.putExtra("message","Welcome On Board")
+            newIntent.putExtra("age",23)
+            newIntent.putExtra("name", "Berkin Koca")
+            newIntent.putExtra("object", user)
+            
+            startActivity(newIntent)
+
+
         }
 
         binding.helpText.setOnClickListener {

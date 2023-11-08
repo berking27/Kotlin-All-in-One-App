@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".HomePageActivity">
 
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="279dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="63dp"
+        android:text="Go To Test Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
