@@ -26,7 +26,9 @@ class HomePageActivity : AppCompatActivity() {
         val incomingMessage = intent.getStringExtra("message")
         val incomingAge = intent.getIntExtra("age", 0)
         val incomingName = intent.getStringExtra("name")
+        val username = intent.getStringExtra("username")
 
+        binding.hpTextView.text = username
 
         val user = intent.getSerializableExtra("object") as Users
         Log.e("USER TCNo",(user.tcNo))

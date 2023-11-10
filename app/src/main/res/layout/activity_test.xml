@@ -26,5 +26,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signOutBtn" />
 
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="184dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="45dp"
+        android:text="Dark Mode"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contextBtn" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="180dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="48dp"
+        android:text="ToggleButton"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Button
+        android:id="@+id/toButtonsActivity"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="Checkboxs and Radio Buttons"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

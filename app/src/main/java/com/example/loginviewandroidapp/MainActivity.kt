@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         Log.e("onCreate", "worked")
 
         binding.loginBtn.setOnClickListener {
+
+            val usernameData = binding.usernameText.text.toString()
+
+
             val user = Users("1234", 23, "Berkin Koca")
 
             val newIntent = Intent(this@MainActivity, HomePageActivity::class.java)
@@ -27,10 +31,9 @@ class MainActivity : AppCompatActivity() {
             newIntent.putExtra("age",23)
             newIntent.putExtra("name", "Berkin Koca")
             newIntent.putExtra("object", user)
-            
+            newIntent.putExtra("username", usernameData)
+
             startActivity(newIntent)
-
-
         }
 
         binding.helpText.setOnClickListener {
