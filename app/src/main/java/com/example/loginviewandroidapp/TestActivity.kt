@@ -44,6 +44,12 @@ class TestActivity : AppCompatActivity() {
             startActivity(newIntent)
         }
 
+        binding.toProgressBar.setOnClickListener {
+            val newIntent = Intent(this@TestActivity,ProgressViewsActivity::class.java)
+
+            startActivity(newIntent)
+        }
+
         binding.contextBtn.setOnClickListener{
             Toast.makeText(applicationContext, "Hi This is how context seen", Toast.LENGTH_SHORT).show()
         }
