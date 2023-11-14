@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.loginviewandroidapp.GuessingGame.GameMainActivity
 import com.example.loginviewandroidapp.databinding.ActivityHomePageBinding
 import com.example.loginviewandroidapp.databinding.ActivityMainBinding
 
@@ -43,6 +44,12 @@ class HomePageActivity : AppCompatActivity() {
 
         binding.spinnerBtn.setOnClickListener {
             val newIntent = Intent(this@HomePageActivity,SpinnerActivity::class.java)
+
+            startActivity(newIntent)
+        }
+
+        binding.guessGameBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity,GameMainActivity::class.java)
 
             startActivity(newIntent)
         }

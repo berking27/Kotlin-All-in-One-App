@@ -29,6 +29,17 @@
         app:layout_constraintTop_toBottomOf="@+id/datePickerBtn" />
 
     <Button
+        android:id="@+id/guessGameBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Guess Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBtn" />
+
+    <Button
         android:id="@+id/buttonTest"
         android:layout_width="200dp"
         android:layout_height="60dp"
