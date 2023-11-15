@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestActivity">
+    tools:context=".AlertViewActivity">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="409dp"
+        android:layout_height="840dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,57 +22,59 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/toProgressBar"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="60dp"
-                android:layout_marginBottom="50dp"
-                android:text="Progress Bar Views"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/toButtonsActivity"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="30dp"
-                android:text="Checkboxs and Radio Buttons"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/signOutBtn"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="31dp"
-                android:text="Sign Out" />
-
-            <Button
-                android:id="@+id/contextBtn"
+                android:id="@+id/popUpBtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="64dp"
-                android:text="Click For context" />
-
-            <ToggleButton
-                android:id="@+id/toggleButton"
-                android:layout_width="match_parent"
-                android:layout_height="91dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginBottom="60dp"
-                android:text="ToggleButton"
-                android:textSize="24dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="?android:attr/colorActivatedHighlight"
+                android:text="Pop up View"
                 android:textStyle="bold" />
 
-            <Switch
-                android:id="@+id/switch1"
+            <Button
+                android:id="@+id/defaultAlertViewBtn"
                 android:layout_width="match_parent"
-                android:layout_height="73dp"
-                android:layout_marginTop="45dp"
-                android:text="Switch Button Testing"
-                android:textAlignment="center"
-                android:textSize="24dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="Default Alert View"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/customAlertViewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#E91E63"
+                android:text="Custom Alert View"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/snackbarNormalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="SnackBar Normal View"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/snackBarReturnBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#009688"
+                android:text="SnackBar Return View"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/snackBarCustomBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3F51B5"
+                android:text="SnackBar Custom View"
+                android:textStyle="bold" />
+
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

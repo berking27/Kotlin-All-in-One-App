@@ -40,12 +40,23 @@
         app:layout_constraintTop_toBottomOf="@+id/spinnerBtn" />
 
     <Button
+        android:id="@+id/alertViewsBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Alert Views"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessGameBtn" />
+
+    <Button
         android:id="@+id/buttonTest"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="69dp"
         android:layout_marginEnd="63dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="32dp"
         android:text="Go To Test Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,9 +67,9 @@
         android:id="@+id/hpTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="64dp"
         android:text="Hello World!"
-        android:textColor="#673AB7"
+        android:textColor="@color/accentColor"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,5 +97,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/webViewBtn" />
+
+    <Button
+        android:id="@+id/lightModeBtn"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Light Mode "
+        app:layout_constraintEnd_toStartOf="@+id/darkModeBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alertViewsBtn" />
+
+    <Button
+        android:id="@+id/darkModeBtn"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Dark Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lightModeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/alertViewsBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

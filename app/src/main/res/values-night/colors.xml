@@ -2,8 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="accentColor">#603D9E</color>
-    <color name="themeColor">#FFFFFF</color>
-
+    <color name="accentColor">#03A9F4</color>
+    <color name="themeColor">#FF000000</color>
 
 </resources>

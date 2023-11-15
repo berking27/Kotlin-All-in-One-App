@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.loginviewandroidapp.GuessingGame.GameMainActivity
 import com.example.loginviewandroidapp.databinding.ActivityHomePageBinding
 import com.example.loginviewandroidapp.databinding.ActivityMainBinding
@@ -54,6 +55,19 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(newIntent)
         }
 
+        binding.alertViewsBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity, AlertViewActivity::class.java)
+
+            startActivity(newIntent)
+        }
+
+        binding.darkModeBtn.setOnClickListener {
+            delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
+        }
+
+        binding.lightModeBtn.setOnClickListener {
+            delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
+        }
 
         val incomingMessage = intent.getStringExtra("message")
         val incomingAge = intent.getIntExtra("age", 0)

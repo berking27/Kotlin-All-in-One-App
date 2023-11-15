@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import com.example.loginviewandroidapp.databinding.ActivityTestBinding
 
@@ -51,7 +52,7 @@ class TestActivity : AppCompatActivity() {
         }
 
         binding.contextBtn.setOnClickListener{
-            Toast.makeText(applicationContext, "Hi This is how context seen", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "Hi This is default Toast Message", Toast.LENGTH_SHORT).show()
         }
     }
 
