@@ -1,13 +1,13 @@
-package com.example.loginviewandroidapp
+package com.example.loginviewandroidapp.Views
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.loginviewandroidapp.databinding.ActivityHomePageBinding
+import com.example.loginviewandroidapp.Models.Users
+import com.example.loginviewandroidapp.R
+import com.example.loginviewandroidapp.Views.HomePageActivity.HomePageActivity
 import com.example.loginviewandroidapp.databinding.ActivityMainBinding
-import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     private  lateinit var binding:ActivityMainBinding

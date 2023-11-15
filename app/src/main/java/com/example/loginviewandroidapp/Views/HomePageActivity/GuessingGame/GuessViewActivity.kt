@@ -1,4 +1,4 @@
-package com.example.loginviewandroidapp.GuessingGame
+package com.example.loginviewandroidapp.Views.HomePageActivity.GuessingGame
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +29,7 @@ class GuessViewActivity : AppCompatActivity() {
             val guess = binding.editTextInput.text.toString().toInt()
 
             if(guess == randomNumber){
-                val newIntent = Intent(this@GuessViewActivity,ResultViewActivity::class.java)
+                val newIntent = Intent(this@GuessViewActivity, ResultViewActivity::class.java)
                 newIntent.putExtra("result",true)
                 finish()
                 startActivity(newIntent)
@@ -46,7 +46,7 @@ class GuessViewActivity : AppCompatActivity() {
             }
 
             if (counter == 0){
-                val newIntent = Intent(this@GuessViewActivity,ResultViewActivity::class.java)
+                val newIntent = Intent(this@GuessViewActivity, ResultViewActivity::class.java)
                 newIntent.putExtra("result",false)
 
                 finish()

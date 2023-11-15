@@ -1,13 +1,14 @@
-package com.example.loginviewandroidapp
+package com.example.loginviewandroidapp.Views.HomePageActivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
-import com.example.loginviewandroidapp.GuessingGame.GameMainActivity
+import com.example.loginviewandroidapp.Views.HomePageActivity.GuessingGame.GameMainActivity
+import com.example.loginviewandroidapp.Models.Users
+import com.example.loginviewandroidapp.Views.TestPageActivity.TestActivity
 import com.example.loginviewandroidapp.databinding.ActivityHomePageBinding
-import com.example.loginviewandroidapp.databinding.ActivityMainBinding
 
 class HomePageActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomePageBinding
@@ -18,7 +19,7 @@ class HomePageActivity : AppCompatActivity() {
 
 
         binding.buttonTest.setOnClickListener {
-            val newIntent = Intent(this@HomePageActivity,TestActivity::class.java)
+            val newIntent = Intent(this@HomePageActivity, TestActivity::class.java)
 
             finish()
 
@@ -26,31 +27,31 @@ class HomePageActivity : AppCompatActivity() {
         }
 
         binding.imageViewBtn.setOnClickListener {
-            val newIntent = Intent(this@HomePageActivity,ImageViewActivity::class.java)
+            val newIntent = Intent(this@HomePageActivity, ImageViewActivity::class.java)
 
             startActivity(newIntent)
         }
 
         binding.webViewBtn.setOnClickListener {
-            val newIntent = Intent(this@HomePageActivity,WebViewActivity::class.java)
+            val newIntent = Intent(this@HomePageActivity, WebViewActivity::class.java)
 
             startActivity(newIntent)
         }
 
         binding.datePickerBtn.setOnClickListener {
-            val newIntent = Intent(this@HomePageActivity,DatePickerActivity::class.java)
+            val newIntent = Intent(this@HomePageActivity, DatePickerActivity::class.java)
 
             startActivity(newIntent)
         }
 
         binding.spinnerBtn.setOnClickListener {
-            val newIntent = Intent(this@HomePageActivity,SpinnerActivity::class.java)
+            val newIntent = Intent(this@HomePageActivity, SpinnerActivity::class.java)
 
             startActivity(newIntent)
         }
 
         binding.guessGameBtn.setOnClickListener {
-            val newIntent = Intent(this@HomePageActivity,GameMainActivity::class.java)
+            val newIntent = Intent(this@HomePageActivity, GameMainActivity::class.java)
 
             startActivity(newIntent)
         }
@@ -61,13 +62,6 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(newIntent)
         }
 
-        binding.darkModeBtn.setOnClickListener {
-            delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
-        }
-
-        binding.lightModeBtn.setOnClickListener {
-            delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
-        }
 
         val incomingMessage = intent.getStringExtra("message")
         val incomingAge = intent.getIntExtra("age", 0)

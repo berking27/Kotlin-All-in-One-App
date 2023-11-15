@@ -1,4 +1,4 @@
-package com.example.loginviewandroidapp
+package com.example.loginviewandroidapp.Views.TestPageActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

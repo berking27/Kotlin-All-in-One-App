@@ -1,4 +1,4 @@
-package com.example.loginviewandroidapp
+package com.example.loginviewandroidapp.Models
 
 import java.io.Serializable
 

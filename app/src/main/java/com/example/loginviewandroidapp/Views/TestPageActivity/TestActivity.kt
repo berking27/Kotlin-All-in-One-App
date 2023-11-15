@@ -1,11 +1,11 @@
-package com.example.loginviewandroidapp
+package com.example.loginviewandroidapp.Views.TestPageActivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
 import android.widget.Toast
+import com.example.loginviewandroidapp.Views.MainActivity
 import com.example.loginviewandroidapp.databinding.ActivityTestBinding
 
 class TestActivity : AppCompatActivity() {
@@ -33,20 +33,20 @@ class TestActivity : AppCompatActivity() {
         }
 
         binding.signOutBtn.setOnClickListener {
-            val newIntent = Intent(this@TestActivity,MainActivity::class.java)
+            val newIntent = Intent(this@TestActivity, MainActivity::class.java)
             finish()
 
             startActivity(newIntent)
         }
 
         binding.toButtonsActivity.setOnClickListener {
-            val newIntent = Intent(this@TestActivity,ButtonsViewActivity::class.java)
+            val newIntent = Intent(this@TestActivity, ButtonsViewActivity::class.java)
 
             startActivity(newIntent)
         }
 
         binding.toProgressBar.setOnClickListener {
-            val newIntent = Intent(this@TestActivity,ProgressViewsActivity::class.java)
+            val newIntent = Intent(this@TestActivity, ProgressViewsActivity::class.java)
 
             startActivity(newIntent)
         }

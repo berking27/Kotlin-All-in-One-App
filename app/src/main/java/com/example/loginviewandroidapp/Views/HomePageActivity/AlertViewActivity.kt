@@ -1,4 +1,4 @@
-package com.example.loginviewandroidapp
+package com.example.loginviewandroidapp.Views.HomePageActivity
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.PopupMenu
+import com.example.loginviewandroidapp.R
 import com.example.loginviewandroidapp.databinding.ActivityAlertViewBinding
 import com.google.android.material.snackbar.Snackbar
 

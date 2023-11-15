@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuessingGame.ResultViewActivity">
+    tools:context=".Views.HomePageActivity.GuessingGame.ResultViewActivity">
 
   <ImageView
       android:id="@+id/resultImage"

@@ -1,4 +1,4 @@
-package com.example.loginviewandroidapp.GuessingGame
+package com.example.loginviewandroidapp.Views.HomePageActivity.GuessingGame
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +24,7 @@ class ResultViewActivity : AppCompatActivity() {
         }
 
         binding.repeatBtn.setOnClickListener {
-            val newIntent = Intent(this@ResultViewActivity,GuessViewActivity::class.java)
+            val newIntent = Intent(this@ResultViewActivity, GuessViewActivity::class.java)
             finish()
             startActivity(newIntent)
         }

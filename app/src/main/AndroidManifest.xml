@@ -16,43 +16,43 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".AlertViewActivity"
+            android:name=".Views.HomePageActivity.AlertViewActivity"
             android:exported="false" />
         <activity
-            android:name=".GuessingGame.ResultViewActivity"
+            android:name=".Views.HomePageActivity.GuessingGame.ResultViewActivity"
             android:exported="false" />
         <activity
-            android:name=".GuessingGame.GuessViewActivity"
+            android:name=".Views.HomePageActivity.GuessingGame.GuessViewActivity"
             android:exported="false" />
         <activity
-            android:name=".GuessingGame.GameMainActivity"
+            android:name=".Views.HomePageActivity.GuessingGame.GameMainActivity"
             android:exported="false" />
         <activity
-            android:name=".SpinnerActivity"
+            android:name=".Views.HomePageActivity.SpinnerActivity"
             android:exported="false" />
         <activity
-            android:name=".DatePickerActivity"
+            android:name=".Views.HomePageActivity.DatePickerActivity"
             android:exported="false" />
         <activity
-            android:name=".ImageViewActivity"
+            android:name=".Views.HomePageActivity.ImageViewActivity"
             android:exported="false" />
         <activity
-            android:name=".WebViewActivity"
+            android:name=".Views.HomePageActivity.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ProgressViewsActivity"
+            android:name=".Views.TestPageActivity.ProgressViewsActivity"
             android:exported="false" />
         <activity
-            android:name=".ButtonsViewActivity"
+            android:name=".Views.TestPageActivity.ButtonsViewActivity"
             android:exported="false" />
         <activity
-            android:name=".TestActivity"
+            android:name=".Views.TestPageActivity.TestActivity"
             android:exported="false" />
         <activity
-            android:name=".HomePageActivity"
+            android:name=".Views.HomePageActivity.HomePageActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
