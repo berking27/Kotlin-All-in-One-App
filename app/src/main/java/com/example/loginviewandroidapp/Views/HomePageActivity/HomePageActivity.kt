@@ -73,6 +73,11 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(newIntent)
         }
 
+        binding.recyclerViewBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity, RecyclerViewActivity::class.java)
+            startActivity(newIntent)
+        }
+
 
         val incomingMessage = intent.getStringExtra("message")
         val incomingAge = intent.getIntExtra("age", 0)
