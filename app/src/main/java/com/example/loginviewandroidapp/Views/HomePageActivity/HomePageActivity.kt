@@ -18,7 +18,7 @@ class HomePageActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.buttonTest.setOnClickListener {
+        binding.testBtn.setOnClickListener {
             val newIntent = Intent(this@HomePageActivity, TestActivity::class.java)
 
             finish()
@@ -59,6 +59,17 @@ class HomePageActivity : AppCompatActivity() {
         binding.alertViewsBtn.setOnClickListener {
             val newIntent = Intent(this@HomePageActivity, AlertViewActivity::class.java)
 
+            startActivity(newIntent)
+        }
+
+        binding.floatingLabelBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity, FloatingLabelActivity::class.java)
+
+            startActivity(newIntent)
+        }
+
+        binding.toolbarBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity, CustomToolBarActivity::class.java)
             startActivity(newIntent)
         }
 

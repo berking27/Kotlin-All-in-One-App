@@ -16,6 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Views.HomePageActivity.CustomToolBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.HomePageActivity.FloatingLabelActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.HomePageActivity.AlertViewActivity"
             android:exported="false" />
         <activity

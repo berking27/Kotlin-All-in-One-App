@@ -35,8 +35,19 @@
                 tools:layout_editor_absoluteY="64dp" />
 
             <Button
+                android:id="@+id/guessGameBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Guess Game"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="457dp" />
+
+            <Button
                 android:id="@+id/datePickerBtn"
-                android:layout_width="match_parent"
+                android:layout_width="360dp"
                 android:layout_height="64dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#00BCD4"
@@ -47,7 +58,7 @@
 
             <Button
                 android:id="@+id/spinnerBtn"
-                android:layout_width="match_parent"
+                android:layout_width="360dp"
                 android:layout_height="64dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#00BCD4"
@@ -56,44 +67,10 @@
                 android:textStyle="bold"
                 tools:layout_editor_absoluteY="377dp" />
 
-            <Button
-                android:id="@+id/guessGameBtn"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#00BCD4"
-                android:text="Guess Game"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteY="457dp" />
-
-            <Button
-                android:id="@+id/alertViewsBtn"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#00BCD4"
-                android:text="Alert Views"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteY="537dp" />
-
-            <Button
-                android:id="@+id/buttonTest"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#00BCD4"
-                android:text="Go To Test Activity"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="105dp"
-                tools:layout_editor_absoluteY="726dp" />
-
 
             <Button
                 android:id="@+id/webViewBtn"
-                android:layout_width="match_parent"
+                android:layout_width="360dp"
                 android:layout_height="64dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#00BCD4"
@@ -104,7 +81,7 @@
 
             <Button
                 android:id="@+id/imageViewBtn"
-                android:layout_width="match_parent"
+                android:layout_width="360dp"
                 android:layout_height="64dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#00BCD4"
@@ -112,6 +89,54 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteY="217dp" />
+
+            <Button
+                android:id="@+id/alertViewsBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Alert Views"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="537dp" />
+
+            <Button
+                android:id="@+id/testBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Go To Test Activity"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="726dp" />
+
+            <Button
+                android:id="@+id/floatingLabelBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Floating Label"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="726dp" />
+
+            <Button
+                android:id="@+id/toolbarBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Custom Toolbar "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="726dp" />
 
         </LinearLayout>
     </ScrollView>
