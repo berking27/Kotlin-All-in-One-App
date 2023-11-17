@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.PopupMenu
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.loginviewandroidapp.Models.Countries
@@ -41,12 +42,40 @@ class RVAdapter(private val mContext: Context,private val countryList: List<Coun
     }
 
     override fun onBindViewHolder(holder: CardViewDesignObjectKeeper, position: Int) {
-        val country = countryList.get(position)
+        val country = countryList[position]
 
         holder.lineText.text = country.nameCountry
 
         holder.lineCardView.setOnClickListener {
             Toast.makeText(mContext, "Country: ${country.id}", Toast.LENGTH_SHORT).show()
+        }
+
+        holder.dotsImage.setOnClickListener {
+
+            val  popup = PopupMenu(mContext,holder.dotsImage)
+
+            popup.menuInflater.inflate(R.menu.popup_menu, popup.menu)
+
+            popup.show()
+
+            popup.setOnMenuItemClickListener { item ->
+                  when (item.itemId){
+                      R.id.action_delete -> {
+                          Toast.makeText(mContext, "Delete: ${country.id}", Toast.LENGTH_SHORT).show()
+                          true
+                      }
+
+                      R.id.action_edit -> {
+                          Toast.makeText(mContext, "Edit: ${country.id}", Toast.LENGTH_SHORT).show()
+                          true
+                      }
+
+                      else -> {
+                          false
+                      }
+                  }
+            }
+
         }
     }
 
