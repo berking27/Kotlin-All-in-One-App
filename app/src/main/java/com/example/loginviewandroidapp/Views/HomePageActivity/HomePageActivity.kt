@@ -4,9 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatDelegate
 import com.example.loginviewandroidapp.Views.HomePageActivity.GuessingGame.GameMainActivity
 import com.example.loginviewandroidapp.Models.Users
+import com.example.loginviewandroidapp.Views.HomePageActivity.TabLayout.TabLayoutActivity
 import com.example.loginviewandroidapp.Views.TestPageActivity.TestActivity
 import com.example.loginviewandroidapp.databinding.ActivityHomePageBinding
 
@@ -80,6 +80,11 @@ class HomePageActivity : AppCompatActivity() {
 
         binding.moviesPageBtn.setOnClickListener {
             val newIntent = Intent(this@HomePageActivity, MoviesMainActivity::class.java)
+            startActivity(newIntent)
+        }
+
+        binding.tabLayoutBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity, TabLayoutActivity::class.java)
             startActivity(newIntent)
         }
 

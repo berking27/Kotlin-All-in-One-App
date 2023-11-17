@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/more_vert/baseline_more_vert_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/looks_3/baseline_looks_3_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +29,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="070707" />
-                            <entry key="outputName" value="vertical_dots" />
+                            <entry key="outputName" value="baseline_looks_3_24" />
                           </map>
                         </option>
                       </PersistentState>

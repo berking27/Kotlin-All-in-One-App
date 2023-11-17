@@ -149,6 +149,17 @@
                 tools:layout_editor_absoluteY="726dp" />
 
             <Button
+                android:id="@+id/tabLayoutBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Tab Layout"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="457dp" />
+
+            <Button
                 android:id="@+id/toolbarBtn"
                 android:layout_width="360dp"
                 android:layout_height="64dp"
