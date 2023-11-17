@@ -46,6 +46,17 @@
                 tools:layout_editor_absoluteY="457dp" />
 
             <Button
+                android:id="@+id/moviesPageBtn"
+                android:layout_width="360dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Movies Page"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="457dp" />
+
+            <Button
                 android:id="@+id/datePickerBtn"
                 android:layout_width="360dp"
                 android:layout_height="64dp"

@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Views.HomePageActivity.MoviesMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.HomePageActivity.RecyclerViewActivity"
             android:exported="false" />
         <activity

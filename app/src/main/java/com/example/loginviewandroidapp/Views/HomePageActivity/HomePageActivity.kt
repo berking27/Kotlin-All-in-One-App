@@ -78,6 +78,11 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(newIntent)
         }
 
+        binding.moviesPageBtn.setOnClickListener {
+            val newIntent = Intent(this@HomePageActivity, MoviesMainActivity::class.java)
+            startActivity(newIntent)
+        }
+
 
         val incomingMessage = intent.getStringExtra("message")
         val incomingAge = intent.getIntExtra("age", 0)

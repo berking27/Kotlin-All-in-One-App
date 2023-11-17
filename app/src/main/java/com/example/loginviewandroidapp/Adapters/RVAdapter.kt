@@ -14,9 +14,9 @@ import com.example.loginviewandroidapp.Models.Countries
 import com.example.loginviewandroidapp.R
 
 class RVAdapter(private val mContext: Context,private val countryList: List<Countries>)
-    : RecyclerView.Adapter<RVAdapter.CardViewDesignObjectKeeper>(){
+    : RecyclerView.Adapter<RVAdapter.CardViewHolder>(){
 
-    inner class CardViewDesignObjectKeeper(view: View): RecyclerView.ViewHolder(view){
+    inner class CardViewHolder(view: View): RecyclerView.ViewHolder(view){
         var lineCardView: CardView
         var lineText: TextView
         var dotsImage: ImageView
@@ -30,18 +30,18 @@ class RVAdapter(private val mContext: Context,private val countryList: List<Coun
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewDesignObjectKeeper {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
 
         val desing = LayoutInflater.from(mContext).inflate(R.layout.card_design, parent, false)
 
-        return CardViewDesignObjectKeeper(desing)
+        return CardViewHolder(desing)
     }
 
     override fun getItemCount(): Int {
         return countryList.size
     }
 
-    override fun onBindViewHolder(holder: CardViewDesignObjectKeeper, position: Int) {
+    override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
         val country = countryList[position]
 
         holder.lineText.text = country.nameCountry
